@@ -15,5 +15,10 @@ public class StreamAPI {
         names.add("Fahim");
         names.add("Ahmed");
 
+        // Simple for loop
+        for (int i = 0; i < names.size(); i++) {
+            System.out.println(names.get(i));
+
+        }
     }
 }
