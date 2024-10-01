@@ -55,6 +55,8 @@ public class StreamAPI {
         System.out.println();
 
         // STREAM API
-
+        names.stream().forEach(name -> {
+            System.out.println(name);
+        });
     }
 }
