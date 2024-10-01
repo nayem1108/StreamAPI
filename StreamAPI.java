@@ -54,5 +54,7 @@ public class StreamAPI {
         names.forEach(System.out::println);
         System.out.println();
 
+        // STREAM API
+
     }
 }
