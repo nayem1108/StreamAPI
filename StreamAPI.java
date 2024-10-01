@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * StreamAPI
@@ -22,5 +23,12 @@ public class StreamAPI {
         for (String name : names) {
             System.out.println(name);
         }
+
+        // Iterator
+        Iterator<String> ite = names.iterator();
+        while (ite.hasNext()) {
+            System.out.println(ite.next());
+        }
+
     }
 }
