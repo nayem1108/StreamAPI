@@ -22,6 +22,7 @@ public class EngineeringDigest {
         System.out.println(filteredList);
 
         // map provided a same length of previous list
+        // map used to modify the list
         List<Integer> mappedList = numList.stream().map(a -> a * 2).collect(Collectors.toList());
         System.out.println(mappedList);
     }
