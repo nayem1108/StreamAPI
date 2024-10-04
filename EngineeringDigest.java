@@ -49,5 +49,10 @@ public class EngineeringDigest {
         // it takes a limit to skip till that from starting
         List<Integer> skippedList = numList.stream().skip(10).collect(Collectors.toList());
         System.out.println(skippedList);
+
+        // peek method used to see the current situation
+        // after skipped it showing the current items
+        numList.stream().skip(10).peek(System.out::println).collect(Collectors.toList());
+
     }
 }
