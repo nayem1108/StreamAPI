@@ -13,6 +13,8 @@ public class EngineeringDigest {
         System.out.println(streamedList);
 
         // Stream Methods
-
+        // Filter
+        List<Integer> numList = Arrays.asList(1, 2, 3, 4, 5, 6, 6, 4534, 434, 3453, 236, 456, 2236, 54432, 64);
+        System.out.println(numList);
     }
 }
