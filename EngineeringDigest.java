@@ -30,5 +30,15 @@ public class EngineeringDigest {
         // size if ducplicacy found
         List<Integer> distinctList = numList.stream().distinct().collect(Collectors.toList());
         System.out.println(distinctList);
+
+        // sorted method initially returns the result as ascending order
+        // never change the value of the original array
+        List<Integer> sortedList = numList.stream().sorted().collect(Collectors.toList());
+        System.out.println(sortedList);
+
+        // sorted method initially returns the result as ascending order
+        // never change the value of the original array
+        List<Integer> sortedAsList = numList.stream().sorted((a, b) -> (b - a)).collect(Collectors.toList());
+        System.out.println(sortedAsList);
     }
 }
