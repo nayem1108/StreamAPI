@@ -25,5 +25,10 @@ public class EngineeringDigest {
         // map used to modify the list
         List<Integer> mappedList = numList.stream().map(a -> a * 2).collect(Collectors.toList());
         System.out.println(mappedList);
+
+        // distinct method returns all duplicate value onece and others it reduces the
+        // size if ducplicacy found
+        List<Integer> distinctList = numList.stream().distinct().collect(Collectors.toList());
+        System.out.println(distinctList);
     }
 }
