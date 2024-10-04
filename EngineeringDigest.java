@@ -44,5 +44,10 @@ public class EngineeringDigest {
         // limit method initially returns maxSize of the list based on the parameter
         List<Integer> limitAsList = numList.stream().limit(10).collect(Collectors.toList());
         System.out.println(limitAsList);
+
+        // skipped method skipped element basedo on given condition
+        // it takes a limit to skip till that from starting
+        List<Integer> skippedList = numList.stream().skip(10).collect(Collectors.toList());
+        System.out.println(skippedList);
     }
 }
