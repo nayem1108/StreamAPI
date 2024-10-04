@@ -54,5 +54,20 @@ public class EngineeringDigest {
         // after skipped it showing the current items
         numList.stream().skip(10).peek(System.out::println).collect(Collectors.toList());
 
+        // min, max, and count it returns a single value we need to use get to grap the
+        // item for min, max
+
+        // min a-b gives min element and if b-a then gives max element😛😛
+        int min = numList.stream().min((a, b) -> a - b).get();
+        System.out.println(min);
+
+        // max a-b gives max and b-a gives min element
+        // int max = numList.stream().max((a, b) -> a - b).get(); // the max element
+        int max = numList.stream().max((a, b) -> b - a).get(); // the me=in ekement
+        System.out.println(max);
+
+        // count gives the length
+        System.out.println(numList.stream().count());
+
     }
 }
