@@ -7,5 +7,7 @@ public class EngineeringDigest {
         List<String> list = Arrays.asList("apple", "mapp;e", "dapple");
         System.out.println(list);
 
+        list.stream();
+
     }
 }
