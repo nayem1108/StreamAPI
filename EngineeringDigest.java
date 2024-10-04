@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class EngineeringDigest {
     public static void main(String[] args) {
@@ -7,7 +8,9 @@ public class EngineeringDigest {
         List<String> list = Arrays.asList("apple", "mapp;e", "dapple");
         System.out.println(list);
 
-        list.stream();
+        Stream<String> streamedList = list.stream();
+
+        System.out.println(streamedList);
 
     }
 }
