@@ -17,7 +17,12 @@ public class EngineeringDigest {
         List<Integer> numList = Arrays.asList(1, 2, 3, 4, 5, 6, 6, 4534, 434, 3453, 236, 456, 2236, 54432, 64);
         System.out.println(numList);
         // Filter
+        // filter provided a same or less length of previous list
         List<Integer> filteredList = numList.stream().filter(a -> a % 2 == 0).collect(Collectors.toList());
         System.out.println(filteredList);
+
+        // map provided a same length of previous list
+        List<Integer> mappedList = numList.stream().map(a -> a * 2).collect(Collectors.toList());
+        System.out.println(mappedList);
     }
 }
