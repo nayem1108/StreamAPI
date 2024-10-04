@@ -40,5 +40,9 @@ public class EngineeringDigest {
         // never change the value of the original array
         List<Integer> sortedAsList = numList.stream().sorted((a, b) -> (b - a)).collect(Collectors.toList());
         System.out.println(sortedAsList);
+
+        // limit method initially returns maxSize of the list based on the parameter
+        List<Integer> limitAsList = numList.stream().limit(10).collect(Collectors.toList());
+        System.out.println(limitAsList);
     }
 }
