@@ -67,7 +67,11 @@ public class EngineeringDigest {
         System.out.println(max);
 
         // count gives the length
-        System.out.println(numList.stream().count());
+        System.out.println(numList.stream().count()); // 15
+
+        // find first, isParallel
+        System.out.println(numList.stream().findFirst().get());
+        System.out.println(numList.stream().isParallel());
 
     }
 }
